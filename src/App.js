@@ -1,8 +1,7 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom'
-import { Route, Switch ,   Link } from 'react-router-dom'
+import { Route, Switch  } from 'react-router-dom'
 import Homepage from './components/Homepage'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
@@ -10,14 +9,12 @@ import Portfolio from './components/Portfolio'
 
 
 function App() {
-  document.title="A.Rajab :)";
     return (
-<Router>
+ <Router>
 <Switch>
   <Route
-    exact path='/'
+    exact path={process.env.PUBLIC_URL + '/'}
     component={Homepage}
-
   />
   <Route
     exact path='/home'
@@ -36,7 +33,7 @@ function App() {
     // component={Contact}
   />
 </Switch>
-</Router>
+</Router> 
     );
 }
 
