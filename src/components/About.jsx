@@ -29,7 +29,7 @@ export default function About() {
                                 { value: 1, label: 'Who are you?', trigger: 'whoAmI' },
                                 { value: 2, label: 'What do you do?', trigger: 'work' },
                                 { value: 3, label: 'What is this?', trigger: 'portfolio' },
-                                { value: 4, label: 'stop it!', trigger: 'stop' },
+                                { value: 4, label: 'End of conversation!', trigger: 'stop' },
 
                             ],
                         },

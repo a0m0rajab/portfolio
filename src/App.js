@@ -17,15 +17,15 @@ function App() {
     component={Homepage}
   />
   <Route
-    exact path='/home'
+    exact path={process.env.PUBLIC_URL  + '/home'}
     component={Homepage}
   />
   <Route
-    exact path='/about'
+    exact path={process.env.PUBLIC_URL  + '/about'}
     component={About}
   />
   <Route
-    exact path='/projects'
+    exact path={process.env.PUBLIC_URL + '/projects'}
     component={Portfolio}
   />
   <Route

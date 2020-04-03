@@ -35,16 +35,16 @@ return (
             A.Rajab
 </Typography>
        
-        <Button className={classes.button}   component={Link}  to='./' >
+        <Button className={classes.button}   component={Link}  to={process.env.PUBLIC_URL  + '/'} >
         Home
         </Button>
-        <Button className={classes.button}   component={Link}  to='./about' >
+        <Button className={classes.button}   component={Link}  to={process.env.PUBLIC_URL  + '/about'} >
         About
         </Button>
         <Button className={classes.button}  >
         <a className={classes.button}   href="http://a0m0rajab.github.io/">     CV</a>
         </Button>
-        <Button className={classes.button}   component={Link}  to='./projects' >
+        <Button className={classes.button}   component={Link}  to= {process.env.PUBLIC_URL  + '/projects'} >
         Portfolio
         </Button>
       
